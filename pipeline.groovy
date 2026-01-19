@@ -1,5 +1,5 @@
 pipeline {
-    agent any { label, 'slave' }
+    agent { label, 'slave' }
     stages {
         stage('git-pull-stage') {
             steps {
