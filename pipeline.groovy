@@ -8,7 +8,7 @@ pipeline {
         }
          stage('build-stage') {
             steps {
-                sh 'mvn clean package'
+                sh '/opt/maven/bin/mvn clean package'
             }
         }
          stage('tesr-stage') {
