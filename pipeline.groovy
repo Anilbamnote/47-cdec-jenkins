@@ -8,7 +8,7 @@ pipeline {
         }
          stage('build-stage') {
             steps {
-                echo 'code build sucessfully'
+                sh 'mvn clean package'
             }
         }
          stage('tesr-stage') {
