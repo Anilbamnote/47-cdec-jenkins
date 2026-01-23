@@ -13,7 +13,7 @@ pipeline {
         }
          stage('tesr-stage') {
             steps {
-                sh '''  mvn sonar:sonar \\
+                sh '''  /opt/maven/bin/mvn sonar:sonar \\
                         -Dsonar.projectKey=new-studentapp \\
                         -Dsonar.host.url=http://18.141.203.37:9000 \\
                         -Dsonar.login=1bdbff4bf01b412d86dd2e9aaa23cff101b5c927'''
