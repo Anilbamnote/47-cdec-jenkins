@@ -15,7 +15,7 @@ pipeline {
             steps {
                 sh '''  /opt/maven/bin/mvn clean verify sonar:sonar \\
                         -Dsonar.projectKey=new-studentapp \\
-                        -Dsonar.host.url=http://18.141.203.37:9000 \\
+                        -Dsonar.host.url=http://172.31.21.29:9000 \\
                         -Dsonar.login=1bdbff4bf01b412d86dd2e9aaa23cff101b5c927'''
             }
         }
