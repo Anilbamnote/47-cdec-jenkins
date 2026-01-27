@@ -18,10 +18,10 @@ pipeline {
                   }
 
 
-                //  sh '''mvn sonar:sonar \\
-                //       -Dsonar.projectKey=studentapp \\
-                //        -Dsonar.host.url=http://13.213.70.190:9000 \\
-                //        -Dsonar.login=31ea99c3250677b2342707341800c2cf42735327'''
+                sh '''mvn sonar:sonar \\
+                      -Dsonar.projectKey=Studentapp \\
+                      -Dsonar.host.url=http://98.92.190.131:9000 \\
+                    -Dsonar.login=5d84033aca2f16cb47b430984fae6aeb668c6542'''
             }
         }
         //  stage('Quality_Gate') {
